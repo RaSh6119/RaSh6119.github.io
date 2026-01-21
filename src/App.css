@@ -1,3 +1,46 @@
+/* Import Google Font 'Outfit' */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+  --bg-color: #0f1014;
+  --accent: #7c4dff;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --font-main: 'Outfit', sans-serif; /* Apply the new font */
+}
+
+body {
+  font-family: var(--font-main); /* Enforce the new font everywhere */
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* --- FIX FOR THE 'EDUCATION' TITLE ALIGNMENT --- */
+.section-title {
+  text-align: center;      /* Force center alignment */
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  
+  /* IMPORTANT: Reset any 'left' or 'transform' properties causing the bug */
+  left: auto;
+  transform: none;
+  width: 100%;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  margin: 10px auto 0; /* 'auto' horizontally centers the block */
+  border-radius: 2px;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;

@@ -1,51 +1,86 @@
+/* Navbar.css */
+
 .navbar {
-  /* Semi-transparent background with blur */
-  background-color: rgba(26, 26, 26, 0.8);
-  backdrop-filter: blur(10px); 
-  
-  padding: 1.2rem 2rem;
-  display: flex;
-  justify-content: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 70px; /* Slightly shorter for a sleeker look */
+  background: rgba(15, 16, 20, 0.6); /* Start semi-transparent */
+  backdrop-filter: blur(8px); /* Subtle blur always on */
+  z-index: 1000;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Subtle border */
 }
 
+/* Glass effect gets stronger on scroll */
+.navbar.scrolled {
+  background: rgba(15, 16, 20, 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  
+  /* THIS IS THE KEY FIX FOR ALIGNMENT */
+  width: 100%;
+  max-width: 900px; /* Matches your hero section width */
+  margin: 0 auto;   /* Centers the container */
+  padding: 0 20px;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.dot {
+  color: var(--accent);
+}
+
+/* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 40px; /* More space between links */
+  gap: 30px; /* Clean spacing */
+  align-items: center;
 }
 
 .nav-item {
-  color: #e0e0e0;
+  color: #b0b0b0;
   text-decoration: none;
+  font-size: 0.95rem;
   font-weight: 500;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  padding-bottom: 5px;
+  transition: color 0.3s ease;
   position: relative;
 }
 
-/* Hover Effect: Lighter text and a glow */
 .nav-item:hover {
-  color: #ffffff;
-  text-shadow: 0 0 10px rgba(100, 108, 255, 0.5);
+  color: #fff;
 }
 
-/* Optional: Add a small underline on hover */
-.nav-item::after {
+/* Hover Dot Animation instead of Underline (Cleaner) */
+.nav-item::before {
   content: '';
   position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #646cff;
-  transition: width 0.3s ease;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.nav-item:hover::after {
-  width: 100%;
+.nav-item:hover::before {
+  opacity: 1;
 }
