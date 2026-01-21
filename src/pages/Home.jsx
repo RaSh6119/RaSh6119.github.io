@@ -19,7 +19,7 @@ function Home() {
             pursuing my MS in Computer Science at <strong>CU Boulder</strong>. My work focuses on 
             building <strong>Generative AI</strong> systems, <strong>Neuro-Symbolic RAG</strong> architectures, 
             and robust <strong>robot autonomy</strong>. With experience in backend engineering 
-            and cloud infrastructure, I bridge the gap between complex algorithms and 
+            and cloud infrastructure, I aim to bridge the gap between complex algorithms and 
             scalable real-world applications.
           </p>
         </div>
