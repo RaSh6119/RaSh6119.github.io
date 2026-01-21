@@ -62,7 +62,7 @@ function Projects() {
       links: {
         // code: "https://github.com/RaSh6119",
         paper: "Diffusion_Failure_Recovery_ICRA_2026.pdf",
-        video: "https://www.youtube.com"
+        video: "https://drive.google.com/drive/folders/1ckgJSAS3jynshk8qbAzHzp9Or98flMsv?usp=sharing"
       }
     },
     {
