@@ -69,8 +69,8 @@ function Home() {
               <h3>B.Tech in ECE</h3>
               <span className="year-badge">2018 - 2022</span>
             </div>
-            <p className="university">Sardar Patel Institute of Technology</p>
-            <p className="card-detail">Mumbai, India</p>
+            <p className="university">Sardar Patel Institute of Technology, Mumbai</p>
+            <p className="card-detail">Focus: Robotics, Signal Integrity, Computer Science</p>
           </div>
         </div>
       </section>
