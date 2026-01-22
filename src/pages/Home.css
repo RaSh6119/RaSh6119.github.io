@@ -291,3 +291,116 @@ input:focus, textarea:focus {
   color: #444;
   font-size: 0.9rem;
 }
+
+/* === SKILLS SECTION === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.skill-category h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tags span {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-tags span:hover {
+  background: rgba(124, 77, 255, 0.2);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* === EXPERIENCE TIMELINE === */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* The vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 30px; /* Space for the line */
+  margin-bottom: 3rem;
+}
+
+/* The glowing dot */
+.timeline-dot {
+  position: absolute;
+  left: -4px; /* Center on line */
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+/* Reuse your existing card styles but add list styling */
+.experience-card {
+  background: #1b1d24; /* Or var(--card-bg) */
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateX(5px);
+  border-color: rgba(124, 77, 255, 0.3);
+}
+
+.company {
+  color: var(--text-secondary); /* or #a0a0a0 */
+  margin-top: -10px;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.job-details {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.job-details li {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.job-details li strong {
+  color: white;
+}
