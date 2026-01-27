@@ -24,7 +24,7 @@ function Navbar() {
         <div className="nav-links">
           <Link to="/" className="nav-item">Home</Link>
           <Link to="/projects" className="nav-item">Projects</Link>
-          <a href="/Rahul_ML.pdf" target="_blank" rel="noopener noreferrer" className="nav-item">Resume</a>
+          <a href="/RahulML.pdf" target="_blank" rel="noopener noreferrer" className="nav-item">Resume</a>
           <a href="https://www.linkedin.com/in/rahul-shetty-8b417a179" target="_blank" rel="noopener noreferrer" className="nav-item">LinkedIn</a>
         </div>
       </div>
