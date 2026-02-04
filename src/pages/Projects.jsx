@@ -61,7 +61,7 @@ function Projects() {
       image: "robot-demo.mp4",
       links: {
         // code: "https://github.com/RaSh6119",
-        paper: "Diffusion_Failure_Recovery_ICRA_2026.pdf",
+        paper: "https://arxiv.org/abs/2602.02895",
         video: "https://drive.google.com/drive/folders/1ckgJSAS3jynshk8qbAzHzp9Or98flMsv?usp=sharing"
       }
     },
