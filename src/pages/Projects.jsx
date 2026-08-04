@@ -104,7 +104,7 @@ function Projects() {
             className={`tab-btn ${activeTab === 'ml' ? 'active' : ''}`}
             onClick={() => setActiveTab('ml')}
           >
-            Machine Learning / AI
+            AI & Software
           </button>
           <button 
             className={`tab-btn ${activeTab === 'robotics' ? 'active' : ''}`}
