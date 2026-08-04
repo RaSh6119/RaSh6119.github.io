@@ -49,6 +49,19 @@ function Projects() {
         paper: "", 
         video: "" 
       }
+    },
+    {
+      title: "DriftOps: Real time ML Prediction monitoring platform",
+      description: "Production-style ML platform for flight delay prediction with explainability, drift detection, and automated retrain-and-promote — FastAPI, XGBoost, MLflow, React",
+      skills: ["FastAPI", "XGBoost", "MLflow", "React", "Docker", "Typescript"],
+      // Use a placeholder image or add your own GIF/Screenshot later
+      image: "driftops.png", 
+      links: {
+        code: "https://github.com/RaSh6119/DriftOps-Real-Time-ML-Prediction-MLOps-Monitoring-Platform",
+        paper: "", 
+        video: "" ,
+        website: "https://driftops-six.vercel.app/"
+      }
     }
   ];
 
