@@ -139,7 +139,7 @@ function Projects() {
                   {project.links.code && <a href={project.links.code} target="_blank" rel="noreferrer" className="overlay-btn">View Code</a>}
                   {project.links.paper && <a href={project.links.paper} target="_blank" rel="noreferrer" className="overlay-btn">Read Paper</a>}
                   {project.links.video && <a href={project.links.video} target="_blank" rel="noreferrer" className="overlay-btn">Watch Video</a>}
-                  {project.links.demo && <a href={project.links.demo} target="_blank" rel="noreferrer" className="overlay-btn">Live Demo</a>}
+                  {project.links.website && <a href={project.links.website} target="_blank" rel="noreferrer" className="overlay-btn">Visit Website</a>}
                 </div>
               </div>
 
