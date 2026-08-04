@@ -58,9 +58,8 @@ function Projects() {
       image: "driftops.png", 
       links: {
         code: "https://github.com/RaSh6119/DriftOps-Real-Time-ML-Prediction-MLOps-Monitoring-Platform",
-        paper: "", 
-        video: "" ,
-        website: "https://driftops-six.vercel.app/"
+        website: "https://driftops-six.vercel.app/",
+        video: ""
       }
     }
   ];

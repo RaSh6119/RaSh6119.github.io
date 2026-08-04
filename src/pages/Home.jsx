@@ -135,7 +135,7 @@ function Home() {
               <span className="year-badge">2024 - 2026</span>
             </div>
             <p className="university">University of Colorado, Boulder</p>
-            <p className="card-detail">GPA: 3.84/4.0 | Focus: AI Software and Applied ML IN Robotics</p>
+            <p className="card-detail">GPA: 3.84/4.0 | Focus: AI Software and Applied ML in Robotics</p>
           </div>
           <div className="education-card">
             <div className="card-header">
