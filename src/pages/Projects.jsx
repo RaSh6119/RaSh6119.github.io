@@ -61,6 +61,18 @@ function Projects() {
         website: "https://driftops-six.vercel.app/",
         video: ""
       }
+    },
+    {
+      title: "TaxFlow",
+      description: "A simple web application for a challenge created in 24 hours",
+      skills: ["Javascript", "HTML", "CSS"],
+      // Use a placeholder image or add your own GIF/Screenshot later
+      image: "taxflow.png", 
+      links: {
+        code: "https://github.com/RaSh6119/TaxFlow",
+        website: "https://tax-flow-ruby.vercel.app/",
+        video: ""
+      }
     }
   ];
 
